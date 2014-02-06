@@ -24,8 +24,11 @@
           %button{ :class => "metrics_graph_submit btn btn-primary disabled" } Save Graph
       %ul.search-ahead
         %li
-          %label{ :for => "search-ahead" } Filter metrics:
-          %input{ :class => "search-ahead span4", :type => "text", :placeholder => "Enter search term" }
+          %label{ :for => "search-ahead" }
+          %input{ :class => "search-ahead span4", :type => "text", :placeholder => "Filter metrics" }
+        %li
+          %button{ :class => "filter btn btn-primary disabled" } Search
+
     %span.graph#metrics_graph_preview.span7
 .metrics
 .loading.hidden
